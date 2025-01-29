@@ -13,7 +13,7 @@ let maxPredictions = 0;
     try {
         console.log("Cargando modelo...");
         alert("Cargando modelo...");
-        model = await tmImage.load("model.json", "metadata.json");
+        model = await tmImage.load("https://storage.googleapis.com/tm-model/aBnLJ9M-S/model.json", "https://storage.googleapis.com/tm-model/aBnLJ9M-S/metadata.json");
         maxPredictions = model.getTotalClasses();
         console.log("Modelo cargado");
         alert("Modelo cargado");
