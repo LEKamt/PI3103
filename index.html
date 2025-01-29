@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <title>Detector de fisuras y grietas</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+<header class="text-center py-3 border-bottom">
+  <img src="LogotipoV2-Simple.png" alt="Logotipo de VialBot" width="80" height="80" class="logo">
+  <h1 class="title">Detector de fisuras y grietas v1.2</h1>
+</header>
+
+<main class="container mt-4">
+  <section class="video-section text-center">
+    <div id="label-container" class="result-container"></div>
+    <video id="video" playsinline autoplay class="hidden-video"></video>
+    <canvas id="canvas" width="400" height="400" class="video-canvas"></canvas>
+    <button id="cambiar-camara" class="btn" onclick="cambiarCamara();">Cambiar cámara</button>
+    <canvas id="otrocanvas" width="150" height="150" class="hidden-canvas"></canvas>
+  </section>
+</main>
+
+<footer class="footer text-center py-4">
+  <h2 class="footer-title">VialBot</h2>
+  <p class="footer-text">© 2025 VialBot.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
